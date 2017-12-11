@@ -1,5 +1,5 @@
 {
-    "name": "logging/logging",
+    "name": "ongoo/logging",
     "description":  "Logger for PHP (PSR-3)",
     "keywords": ["php", "logging", "PSR-3", "logger", "log"],
     "homepage": "https://github.com/pgoergler/Logging",
