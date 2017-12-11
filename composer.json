@@ -1,0 +1,26 @@
+{
+    "name": "logging/logging",
+    "description":  "Logger for PHP (PSR-3)",
+    "keywords": ["php", "logging", "PSR-3", "logger", "log"],
+    "homepage": "https://github.com/pgoergler/Logging",
+    "license":  "MIT",
+    "authors":  [ 
+        { 
+            "name": "Paul GOERGLER", 
+            "email": "pgoergler@gmail.com", 
+            "homepage": "http://soft.wayr.fr" 
+        } 
+    ],
+    "require": { 
+        "php": ">=7.1" ,
+        "psr/log": ">=1.0.0"
+    },
+    "autoload": { 
+        "psr-0": { 
+            "Logging": "lib/" 
+        },
+        "files": [
+            "lib/functions/dump_r.php"
+        ]
+    }
+}
