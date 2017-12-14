@@ -52,7 +52,8 @@ class LoggersManager
             {
                 $logger = $this->makeLogger('root');
                 $logger->addAppender('root', $this->getDefaultAppender());
-                $logger->debug(new \Exception("No logger [$name] configured."));
+                // $logger->debug(new \Exception("No logger [$name] configured."));
+                error_log("Ongoo/Logging: No logger [$name] configured.");
                 return $logger;
             }
 
@@ -74,7 +75,7 @@ class LoggersManager
 
     protected function getDefaultAppender()
     {
-        return new \Logging\Appenders\EchoAppender('DefaultAppender', 'ALL');
+        return new \Logging\Appenders\ErrorAppender('DefaultAppender', 'ALL');
     }
 
     public function setLoggerClass($classname)
